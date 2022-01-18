@@ -9,6 +9,10 @@ import { DivisionComponent } from './division/division.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TambahdatadivisiComponent } from './tambahdatadivisi/tambahdatadivisi.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EditdatadivisiComponent } from './editdatadivisi/editdatadivisi.component';
+import { HapusdatadivisiComponent } from './hapusdatadivisi/hapusdatadivisi.component'
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { HttpClientModule } from '@angular/common/http';
     AppMenuComponent,
     DivisionComponent,
     DashboardComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    TambahdatadivisiComponent,
+    EditdatadivisiComponent,
+    HapusdatadivisiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
